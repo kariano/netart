@@ -1,10 +1,11 @@
-## Welcome to GitHub Pages
+## Prototype project for Kiera
 
-You can use the [editor on GitHub](https://github.com/kariano/netart/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 ### Projects
 - [mirror](/mirror/index.html)
+
+
+Ignore the rest of this I'm saving it for later.
 
 ### Markdown
 
