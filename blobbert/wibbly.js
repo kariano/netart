@@ -11,14 +11,11 @@ function setup() {
   colorMode(HSB, 1);
   stroke(1, 0, 0, 0.4);
   noFill()
-// for (let i = 0; i < 10; i++){
-//    blob[i] = new blob(4);
-//  }
 
   n = floor((2 * PI) / step) + 3;
  
   radiusDist.length = n;
-  //radiusDist.fill(size);
+  
 }
 
 function draw() {
@@ -30,14 +27,12 @@ function draw() {
      let k = 0.7 + (j * 0.2)
 
      blob(radiusDist, width/2, height/2, k, t);
-     //t += 0.007;
  
   }
 
   t += 0.007;
 }
 
-// Creates and draws a blob
 // size is the distribution of the radius (before noise) for each angle
 // (xCenter, yCenter) is the position of the center of the blob
 // k is the tightness of the blob (0 = perfect circle)
