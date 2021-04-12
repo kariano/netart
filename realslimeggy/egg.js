@@ -1,3 +1,5 @@
+
+let cols;
 let minRadius, maxRadius, radiusStep;
 let noiseScale = 0.010;
 let circleNum;
@@ -70,8 +72,8 @@ function setup() {
 
   // Kiera's stuff
   createCanvas(windowWidth, windowHeight);
-  minRadius = min(width, height) * 0.1;
-  maxRadius = max(width, height) * 0.4;
+  minRadius = min(windowWidth, windowHeight) * 0.1;
+  maxRadius = max(windowWidth, windowHeight) * 0.4;
   
 
   //egg = random(1, 12);
