@@ -73,7 +73,7 @@ function setup() {
   // Kiera's stuff
   createCanvas(windowWidth, windowHeight);
   minRadius = min(windowWidth, windowHeight) * 0.1;
-  maxRadius = max(windowWidth, windowHeight) * 0.4;
+  maxRadius = max(windowWidth-100, windowHeight-100) * 0.4;
   
 
   //egg = random(1, 12);
