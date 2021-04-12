@@ -1,6 +1,6 @@
 let minRadius, maxRadius, radiusStep;
 let noiseScale = 0.010;
-let circleNum = 10;
+let circleNum;
 let egg;
 let fry;
 let pan;
@@ -68,10 +68,10 @@ function setup() {
   //createCanvas(400, 400);
 
   // Kiera's stuff
-  createCanvas(windowWidth/2, windowHeight/2);
+  createCanvas(windowWidth, windowHeight);
   minRadius = min(width, height) * 0.1;
   maxRadius = max(width, height) * 0.4;
-  radiusStep = (maxRadius - minRadius) / circleNum;
+  radiusStep = (maxRadius - minRadius) / 10;
 
   //egg = random(1, 12);
   //fry = random(2, 6);
