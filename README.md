@@ -1,7 +1,7 @@
-## Your presence is not unnoticed
+## Your presence does not go unnoticed.
 
 
-### You are leaving a trace everywhere you go
+### You are leaving a trace everywhere you go.
 Individual.
 Specific.
 Would you like to see it?
