@@ -1,12 +1,14 @@
-## Prototype project for Kiera
+## Your presence is not unnoticed
 
 
-### Projects
-- [test](/mirror/index.html)
-- [wibbly](/blobbert/index.html)
-- [fry your egg](/realslimeggy/index.html)
+### You are leaving a trace everywhere you go
+Individual.
+Specific.
+Would you like to see it?
+- [Show me, me](/realslimeggy/index.html)
 
 
-That's all for now.
+By Kiera Ariano
 
+p.s. works best in chrome
 
