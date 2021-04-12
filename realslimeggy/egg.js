@@ -68,7 +68,7 @@ function setup() {
   //createCanvas(400, 400);
 
   // Kiera's stuff
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth/2, windowHeight/2);
   minRadius = min(width, height) * 0.1;
   maxRadius = max(width, height) * 0.4;
   radiusStep = (maxRadius - minRadius) / circleNum;
