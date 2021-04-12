@@ -71,7 +71,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   minRadius = min(width, height) * 0.1;
   maxRadius = max(width, height) * 0.4;
-  radiusStep = (maxRadius - minRadius) / 10;
+  radiusStep = (maxRadius - minRadius) / 30;
 
   //egg = random(1, 12);
   //fry = random(2, 6);
@@ -93,16 +93,16 @@ function draw() {
     egg = map(ip0, 0, 255, 1, 12)
     fry = map(ip1, 0, 255, 2, 6)
   }
-  if (myIPAddress) {
-    text("My IP address is " + myIPAddress, 20, 60);
+  //if (myIPAddress) {
+   // text("My IP address is " + myIPAddress, 20, 60);
   }
   if (myLatitude) {
-    text("My latitude is " + myLatitude, 20, 80);
-    pan = (map(myLatitude, -90, 90, 3, 30))
+   // text("My latitude is " + myLatitude, 20, 80);
+    pan = (map(myLatitude-floor(myLatitude), 0, 1, 3, 30))
   }
   if (myLongitude) {
-    text("My longitude is " + myLongitude, 20, 100);
-    circleNum = (map(myLongitude, -180, 180, 8, 24))
+    //text("My longitude is " + myLongitude, 20, 100);
+    circleNum = (map(myLongitude-floor(myLongitude), 0, 1, 8, 24))
   }
   // text("This is some text", 20, 120);
   //background(220);
