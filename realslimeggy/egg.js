@@ -91,7 +91,7 @@ function draw() {
     ip1 = ipParts[1];
     ip2 = ipParts[2];
     ip3 = ipParts[3];
-    egg = map(ip0, 0, 255, 1, 12)
+    circleNum = map(ip0, 0, 255, 8, 24)
     fry = map(ip1, 0, 255, 2, 6)
   }
   if (myIPAddress) {
@@ -103,7 +103,7 @@ function draw() {
   }
   if (myLongitude) {
     text("My longitude is " + myLongitude, 20, 100);
-    circleNum = (map(myLongitude-floor(myLongitude), 0, 1, 8, 24))
+    egg = (map(myLongitude-floor(myLongitude), 0, 1, 1, 12))
   }
   // text("This is some text", 20, 120);
   //background(220);
