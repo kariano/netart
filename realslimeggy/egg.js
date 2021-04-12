@@ -133,7 +133,7 @@ print(circleNum)
       let nv = noise((x + frameCount / 10) * noiseScale, (y + frameCount * fry) * noiseScale);
       // play with radiusStep factor!  9 is fun
       // if you reduce the radius factor I think you'll get more overlap
-      let r = (nv - 0.5) * radiusStep * egg + radius * 0.9;
+      let r = (nv - 0.5) * radiusStep * egg + radius * 0.7;
       curveVertex(r * cos(theta), r * sin(theta));
     }
     endShape();
