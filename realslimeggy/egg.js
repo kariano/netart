@@ -106,7 +106,7 @@ function draw() {
     circleNum = map(ip0, 0, 255, 8, 24)
     fry = map(ip1, 0, 255, 2, 6)
     r = map (ip3, 0, 255, 1, 254);
-    a = map (ip2, 0, 255, 1, 50);
+    a = map (ip2, 0, 255, 5, 55);
   g = map (ip3, 0, 255, 1, 254);
     b = map (ip2, 0, 255, 1, 254);
   }
