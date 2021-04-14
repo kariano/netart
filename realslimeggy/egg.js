@@ -6,6 +6,10 @@ let circleNum;
 let egg;
 let fry;
 let pan;
+let r;
+let g;
+let b;
+let a;
 
 
 
@@ -74,8 +78,14 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   minRadius = min(windowWidth, windowHeight) * 0.1;
   maxRadius = max(windowWidth-100, windowHeight-100) * 0.4;
-  
 
+//r = random(0,255);
+//g = random(0,255);
+//b = random(0,255);
+//a = random(0,255);
+  
+print(minRadius);
+  print(maxRadius);
   //egg = random(1, 12);
   //fry = random(2, 6);
   //pan = random(3, 30);
@@ -95,6 +105,10 @@ function draw() {
     ip3 = ipParts[3];
     circleNum = map(ip0, 0, 255, 8, 24)
     fry = map(ip1, 0, 255, 2, 6)
+    r = map (ip2, 0, 255, 1, 254);
+    a = map (ip2, 0, 255, 1, 50);
+  g = map (ip3, 0, 255, 1, 254);
+    b = map (ip3, 0, 255, 1, 254);
   }
   if (myIPAddress) {
     text("My IP address is " + myIPAddress, 20, 60);
@@ -114,9 +128,12 @@ function draw() {
 
 radiusStep = (maxRadius - minRadius)/circleNum;
   background(250);
-  noFill();
-print(circleNum)
 
+//print(circleNum)
+//r = random(0,255);
+ // g = random(0,255);
+ // b = random(0,255);
+ // a = random(0,255);
 
   //noStroke();
   translate(width / 2, height / 2);
@@ -125,8 +142,9 @@ print(circleNum)
     // This translate moves the center around a little bit.
     // Play with the constants to see how.  e.g a 0.01 to 0.08
     translate(minRadius * 0.01 * cos(frameCount / pan), minRadius * 0.01 * sin(frameCount / pan));
-    noFill();
-    stroke(1);
+    
+      fill(r,g,b,a);
+    stroke(r,g,b,a);
     beginShape();
     let thetaStep = TWO_PI / Math.floor(TWO_PI / map(40, 0, TWO_PI * radius, 0, TWO_PI));
     for (let theta = 0; theta < TWO_PI + thetaStep * 3; theta += thetaStep) {
