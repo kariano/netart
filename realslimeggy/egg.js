@@ -10,7 +10,9 @@ let r;
 let g;
 let b;
 let a;
-
+let fa = 1;
+let sa = 100;
+var usecolour = false;
 
 
 //// IP address business
@@ -77,7 +79,7 @@ function setup() {
   // Kiera's stuff
   createCanvas(windowWidth, windowHeight);
   minRadius = min(windowWidth, windowHeight) * 0.1;
-  maxRadius = min(windowWidth, windowHeight) * 0.4;
+  maxRadius = max(windowWidth-100, windowHeight-100) * 0.4;
 
 //r = random(0,255);
 //g = random(0,255);
@@ -105,10 +107,10 @@ function draw() {
     ip3 = ipParts[3];
     circleNum = map(ip0, 0, 255, 8, 24)
     fry = map(ip1, 0, 255, 2, 6)
-    r = map (ip3, 0, 255, 1, 254);
-    a = map (ip2, 0, 255, 5, 55);
-  g = map (ip3, 0, 255, 1, 254);
-    b = map (ip2, 0, 255, 1, 254);
+    r = map (ip2, 0, 255, 1, 254);
+    a = map (ip2, 0, 255, 1, 50);
+    g = map (ip3, 0, 255, 1, 254);
+    b = map (ip3, 0, 255, 1, 254);
   }
   if (myIPAddress) {
     text("My IP address is " + myIPAddress, 20, 60);
@@ -134,6 +136,19 @@ radiusStep = (maxRadius - minRadius)/circleNum;
  // g = random(0,255);
  // b = random(0,255);
  // a = random(0,255);
+  
+if(mouseY >= windowHeight/2) {
+  usecolour = false
+} else {usecolour = true}
+  
+if(!usecolour && fa > 0) {
+  fa = fa - 1
+  sa = map(fa, 0, a, 255, a)
+} else if (usecolour && fa < a){
+  fa = fa + 1
+  sa = map(fa, 0, a, 255, a)
+}
+  
 
   //noStroke();
   translate(width / 2, height / 2);
@@ -142,9 +157,10 @@ radiusStep = (maxRadius - minRadius)/circleNum;
     // This translate moves the center around a little bit.
     // Play with the constants to see how.  e.g a 0.01 to 0.08
     translate(minRadius * 0.01 * cos(frameCount / pan), minRadius * 0.01 * sin(frameCount / pan));
-    
-      fill(r,g,b,a);
-    stroke(r,g,b,a);
+    //blendMode(BLEND);
+    //blendMode(MULTIPLY);
+    fill(r,g,b,fa);
+    stroke(r,g,b,sa);
     beginShape();
     let thetaStep = TWO_PI / Math.floor(TWO_PI / map(40, 0, TWO_PI * radius, 0, TWO_PI));
     for (let theta = 0; theta < TWO_PI + thetaStep * 3; theta += thetaStep) {
