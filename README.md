@@ -3,9 +3,9 @@
 
 
 ### You are leaving a trace everywhere you go.
-Individual.
-Specific.
-Would you like to see it?
+Individual.  
+Specific.  
+Would you like to see it?  
 - [Show me, me](/realslimeggy/index.html)
 - [Who am I?](/crazyspin/index.html)
 - [Become known](/wibbly2/index.html)
