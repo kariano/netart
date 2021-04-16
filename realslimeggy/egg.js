@@ -187,11 +187,5 @@ function createCols(_url) {
   return arr;
 }
 
-let lapse = 0; // mouse timer
-function mousePressed() {
-  // prevents mouse press from registering twice
-  if (millis() - lapse > 400) {
-    save('me.jpg');
-    lapse = millis();
-  }
+
 }
