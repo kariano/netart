@@ -98,10 +98,10 @@ function draw() {
     ip3 = ipParts[3];
     circleNum = map(ip0, 0, 255, 8, 24)
     jay = map(ip1, 0, 255, 5, 20)
-    rr = map(ip2, 0, 255, 1, 254);
+    rr = map(ip3, 0, 255, 1, 254);
     a = map(ip2, 0, 255, 1, 50);
     g = map(ip3, 0, 255, 1, 254);
-    b = map(ip3, 0, 255, 1, 254);
+    b = map(ip2, 0, 255, 1, 254);
   }
   if (myIPAddress) {
     text("My IP address is " + myIPAddress, 20, 60);
