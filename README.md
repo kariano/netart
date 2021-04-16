@@ -5,10 +5,11 @@
 ### You are leaving a trace everywhere you go.
 Individual.  
 Specific.  
-Would you like to see it?  
+You can see it if you choose...     
+
 
 <p>
-   <b> Which of these products have your seen most recently? </b>
+   <h3> Which of these products have your seen most recently? </h3>
    </p>
 <table>
 <thead>
@@ -30,11 +31,16 @@ Would you like to see it?
   <p>
 
 By <a href="https://kieraariano.art">Kiera Ariano</a>
-
-
+<p>
+   </p>
+   <p>
+   </p>
+   <p>
+   </p>
 </p>
-<h1>About this project</h1>
+<h2>About this project</h2>
 <p>
 For best results, use a browser that permits location access and make sure your location is turned on. You will then be generated a unique image based on your IP address and your absolute geographic location. To see what different possibilities look like, you can try comparing your laptop on Wi-Fi to your phone on data, or compare your graphic to someone who lives far from you. The project is meant to call attention to your online presence and the trail of data you exude as you navigate any space on the web. In a small way it imagines a bridged connection between the physical setup to access the network and the ephemeral space behind the screen. 
  </p>
+<a href="https://karianoart.pb.studio/video">Project Documentation</a>
 
