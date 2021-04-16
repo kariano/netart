@@ -17,11 +17,13 @@ Which of these products have your seen most recently?
 <tr>
 <th>foo</th>
 <th>bar</th>
+<th>bar</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>baz</td>
+<td>bim</td>
 <td>bim</td>
 </tr>
 </tbody>
