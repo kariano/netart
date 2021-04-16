@@ -6,11 +6,9 @@
 Individual.  
 Specific.  
 Would you like to see it?  
-- [Show me, me](/realslimeggy/index.html)
-- [Who am I?](/crazyspin/index.html)
-- [Become known](/wibbly2/index.html)
+
 <p>
-Which of these products have your seen most recently?
+##Which of these products have your seen most recently?
    </p>
 <table>
 <thead>
@@ -31,7 +29,7 @@ Which of these products have your seen most recently?
    
   <p>
 
-By [Kiera Ariano](https://kieraariano.art)
+By <a href="https://kieraariano.art">Kiera Ariano</a>
 
 
 </p>
