@@ -17,7 +17,7 @@ Which of these products have your seen most recently?
 <tr>
 <th>A</th>
 <th>B</th>
-<th>[Become known](/wibbly2/index.html)</th>
+<th><a href="/wibbly2/index.html">this guy</a></th>
 </tr>
 </thead>
 <tbody>
