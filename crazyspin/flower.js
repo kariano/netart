@@ -6,6 +6,9 @@ let a;
 let jay1;
 let jay2;
 let jay3;
+var usecolour = false;
+let sa = 255
+let fa = 1
 
 //// IP address business
 //
@@ -83,10 +86,10 @@ function draw() {
     ip3 = ipParts[3];
     circleNum = map(ip0, 0, 255, 8, 24)
     jay1 = map(ip1, 0, 255, 5, 20)
-    r = map(ip3, 0, 255, 1, 254);
+    r = map(ip2, 0, 255, 1, 254);
     a = map(ip2, 0, 255, 1, 50);
     g = map(ip3, 0, 255, 1, 254);
-    b = map(ip2, 0, 255, 1, 254);
+    b = map(ip3, 0, 255, 1, 254);
   }
   if (myIPAddress) {
     text("My IP address is " + myIPAddress, 20, 60);
@@ -106,9 +109,9 @@ function draw() {
 
   blendMode(BLEND);
   background(250);
-  noStroke();
+  //noStroke();
   blendMode(MULTIPLY);
-  stroke(r, g, b, a);
+  
   translate(width / 2, height / 2);
   //noFill();
   //drawLiq(18,50,20,100);
@@ -116,9 +119,22 @@ function draw() {
   //drawLiq(15,60,25,120);
   //fill(240,0,240);
   //drawLiq(12,45,15,150);
+  
+  if(mouseY >= windowHeight/2) {
+  usecolour = false
+} else {usecolour = true}
+  
+if(!usecolour && fa > 0) {
+  fa = fa - 1
+  sa = map(fa, 0, a, 255, a)
+} else if (usecolour && fa < a){
+  fa = fa + 1
+  sa = map(fa, 0, a, 255, a)
+}
+  stroke(r, g, b, sa);
   for (j = 0; j < jay1; j++) {
     // translate(width/2,height/3+j);
-    fill(r, g, b, a);
+    fill(r, g, b, fa);
     drawLiq(jay2, 45, 40, jay3);
     // print(width)
   }
