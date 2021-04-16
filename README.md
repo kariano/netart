@@ -8,7 +8,7 @@ Specific.
 Would you like to see it?  
 
 <p>
-## Which of these products have your seen most recently?
+   <b> Which of these products have your seen most recently? </b>
    </p>
 <table>
 <thead>
