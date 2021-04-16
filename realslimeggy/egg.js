@@ -188,4 +188,3 @@ function createCols(_url) {
 }
 
 
-}
