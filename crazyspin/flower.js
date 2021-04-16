@@ -3,9 +3,9 @@ let r;
 let g;
 let b;
 let a;
-let jay1;
-let jay2;
-let jay3;
+let jay1 = 5
+let jay2 = 5
+let jay3 = 200
 var usecolour = false;
 let sa = 255
 let fa = 1
