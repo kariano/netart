@@ -11,6 +11,9 @@ let a;
 let jay;
 let kay;
 let tee;
+var usecolour = false;
+let fa = 1
+let sa = 255
 
 //// IP address business
 //
@@ -98,10 +101,10 @@ function draw() {
     ip3 = ipParts[3];
     circleNum = map(ip0, 0, 255, 8, 24)
     jay = map(ip1, 0, 255, 5, 20)
-    rr = map(ip3, 0, 255, 1, 254);
+    rr = map(ip2, 0, 255, 1, 254);
     a = map(ip2, 0, 255, 1, 50);
     g = map(ip3, 0, 255, 1, 254);
-    b = map(ip2, 0, 255, 1, 254);
+    b = map(ip3, 0, 255, 1, 254);
   }
   if (myIPAddress) {
     text("My IP address is " + myIPAddress, 20, 60);
@@ -119,10 +122,22 @@ function draw() {
   // }
   // ------------------------------------------------
 
+  if(mouseY >= windowHeight/2) {
+  usecolour = false
+} else {usecolour = true}
+  
+if(!usecolour && fa > 0) {
+  fa = fa - 1
+  sa = map(fa, 0, a, 255, a)
+} else if (usecolour && fa < a){
+  fa = fa + 1
+  sa = map(fa, 0, a, 255, a)
+}
+  
   background(255);
-  fill(rr, g, b, a);
+  fill(rr, g, b, fa);
   //noStroke();
-  stroke(rr, g, b, a + 60)
+  stroke(rr, g, b, sa + 60)
   for (let j = 1; j <= jay; j++) {
 
     radiusDist.fill(size + 6 * j);
@@ -169,13 +184,4 @@ function blob(size, xCenter, yCenter, k, t) {
   }
   endShape();
 
-}
-
-let lapse = 0; // mouse timer
-function mousePressed() {
-  // prevents mouse press from registering twice
-  if (millis() - lapse > 400) {
-    save('pix.jpg');
-    lapse = millis();
-  }
 }
