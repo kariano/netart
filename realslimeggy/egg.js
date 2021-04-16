@@ -79,7 +79,7 @@ function setup() {
   // Kiera's stuff
   createCanvas(windowWidth, windowHeight);
   minRadius = min(windowWidth, windowHeight) * 0.1;
-  maxRadius = max(windowWidth-100, windowHeight-100) * 0.4;
+  maxRadius = min(windowWidth, windowHeight) * 0.4;
 
 //r = random(0,255);
 //g = random(0,255);
