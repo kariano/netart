@@ -8,9 +8,9 @@ let rr;
 let g;
 let b;
 let a;
-let jay;
-let kay;
-let tee;
+let jay = 5
+let kay = 3
+let tee = 0.01
 var usecolour = false;
 let fa = 1
 let sa = 255
