@@ -15,14 +15,14 @@ Which of these products have your seen most recently?
 <table>
 <thead>
 <tr>
-<th>foo</th>
-<th>bar</th>
-<th>bar</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>baz</td>
+<td><img src="https://user-images.githubusercontent.com/80500643/114973979-5e277980-9e36-11eb-9a91-2f4fddcf0a1d.png" alt="a" width="200"/></td>
 <td>bim</td>
 <td>bim</td>
 </tr>
