@@ -9,14 +9,14 @@ You can see it if you choose...
 
 
 <p>
-   <h3> Which of these products have your seen most recently? </h3>
+   <h3> Which of these products are you most familiar with? </h3>
    </p>
 <table>
 <thead>
 <tr>
-<th><a href="https://kariano.github.io/netart/realslimeggy/index.html">this guy</a></th>
-<th><a href="https://kariano.github.io/netart/crazyspin/index.html">this guy</a></th>
-<th><a href="https://kariano.github.io/netart/wibbly2/index.html">this guy</a></th>
+<th><a href="https://kariano.github.io/netart/realslimeggy/index.html">memory</a></th>
+<th><a href="https://kariano.github.io/netart/crazyspin/index.html">conscience</a></th>
+<th><a href="https://kariano.github.io/netart/wibbly2/index.html">desire</a></th>
 </tr>
 </thead>
 <tbody>
