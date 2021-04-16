@@ -6,6 +6,7 @@ Individual.
 Specific.
 Would you like to see it?
 - [Show me, me](/realslimeggy/index.html)
+- [Who am I?](/crazyspin/index.html)
 
 
 By Kiera Ariano
