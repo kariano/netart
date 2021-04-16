@@ -17,7 +17,7 @@ Which of these products have your seen most recently?
 <tr>
 <th>A</th>
 <th>B</th>
-<th><a href="/wibbly2/index.html">this guy</a></th>
+<th><a href="https://kariano.github.io/netart/wibbly2/index.html">this guy</a></th>
 </tr>
 </thead>
 <tbody>
