@@ -1,0 +1,19 @@
+let bob;
+let doug;
+
+function setup(){
+   createCanvas(windowWidth, windowHeight);
+
+background(random(255), random(255), random(255));
+}
+
+function draw() {
+  
+ fill (random(255), random(255), random(255));
+ ellipse(bob,doug,24,24);
+ bob = random(width);
+ doug = random(height);
+}
+ function mousePressed(){
+ background(random(255), random(255), random(255)); 
+}
