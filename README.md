@@ -11,13 +11,14 @@ Would you like to see it?
 - [Become known](/wibbly2/index.html)
 <p>
 Which of these products have your seen most recently?
-   [<img src="https://user-images.githubusercontent.com/80500643/114973979-5e277980-9e36-11eb-9a91-2f4fddcf0a1d.png">]
-   ![smiley]<img src="https://user-images.githubusercontent.com/80500643/114973979-5e277980-9e36-11eb-9a91-2f4fddcf0a1d.png">{:height="36px" width="36px"}.
-   
-   <img src="https://user-images.githubusercontent.com/80500643/114973979-5e277980-9e36-11eb-9a91-2f4fddcf0a1d.png" alt="MarineGEO circle logo" width="200"/>
-   <img src="drawing.jpg" alt="drawing" width="200"/>
+   <p>
+      ![line](https://user-images.githubusercontent.com/80500643/115049133-3c0e1580-9e8f-11eb-8561-6b5edad5398d.png)
 
-![image](/assets/images/curve.png)
+    <img src="https://user-images.githubusercontent.com/80500643/115049133-3c0e1580-9e8f-11eb-8561-6b5edad5398d.png" alt="MarineGEO circle logo" width="200"/> 
+   <img src="https://user-images.githubusercontent.com/80500643/114973979-5e277980-9e36-11eb-9a91-2f4fddcf0a1d.png" alt="MarineGEO circle logo" width="200"/>
+  
+
+
 
 By Kiera Ariano    
 <https://kieraariano.art>  
