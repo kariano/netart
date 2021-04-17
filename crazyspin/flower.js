@@ -96,7 +96,7 @@ function draw() {
   }
   if (myLatitude) {
     text("My latitude is " + myLatitude, 20, 80);
-    jay2 = (map(myLatitude - floor(myLatitude), 0, 1, 5, 50))
+    jay2 = (map(myLatitude - floor(myLatitude), 0, 1, 5, 40))
   }
   if (myLongitude) {
     text("My longitude is " + myLongitude, 20, 100);
