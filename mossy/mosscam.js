@@ -33,7 +33,15 @@ function setup() {
 
   //createCanvas(640, 480);
   pixelDensity(1);
-  video = createCapture(VIDEO);
+  video = createCapture(
+  {
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }
+  });
   video.size(width / scaler, height / scaler);
   video.hide();
   preFrame = createImage(video.width, video.height);
