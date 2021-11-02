@@ -1,7 +1,7 @@
 var video;
 var scaler = 10;
 var preFrame;
-var minMovedPixels = 1000;
+var minMovedPixels = 1500;
 
 var n;
 
@@ -64,7 +64,7 @@ function draw() {
   translate(0, height); //moves the origin to bottom left
   scale(1, -1); //flips the y values so y increases "up"
 
-  if (frameCount % 1 == 0) {
+  if (frameCount % 2 == 0) {
     maxLayer = Math.max(Math.trunc(frameCount / framesPerLayer), layers - 1);
     //print("maxLayer is " + maxLayer);
     for (var l = 0; l < layers; l++) {
@@ -95,7 +95,7 @@ function draw() {
 }
 
 function initializeFields() {
-  n = 2000;
+  n = 1000;
   layers = 100;
   //xValues = new Array(n);
   //yValues = new Array(n);
@@ -139,7 +139,7 @@ function movement() {
 
       var diff = dist(r, g, b, pr, pg, pb);
       //print('diff ' + diff)
-      if (diff > 15) {
+      if (diff > 50) {
         moved++;
       }
       //      else {
