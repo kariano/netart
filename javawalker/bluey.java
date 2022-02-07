@@ -6,6 +6,9 @@ final float step = 3;
 final float minDist = step / 2;
 final float maxDist = 25;
 
+int savedTime;
+int totalTime = 5000;
+
  
 float increment = 0.02;
 
@@ -44,6 +47,8 @@ void setup() {
   }
   
   updatePixels();
+ 
+   savedTime = millis();
 
 }
 
@@ -94,10 +99,25 @@ for (PVector p : points) {
     if (pt.dist(p) < maxDist) { 
       line(p.x+20, p.y+20, pt.x+20, pt.y+20);
     }
-  }  
+  }
+ 
+  // Calculate how much time has passed
+  int passedTime = millis() - savedTime;
+  // Has five seconds passed?
+  if (passedTime > totalTime) {
+   fancyReset();
+    //println("5 seconds have passed!");
+    //background(random(255)); // Color a new background
+    savedTime = millis(); // Save the current time to restart the timer!
+  }
+ 
 }
 
 void keyPressed(){
+  fancyReset();
+}
+
+void fancyReset(){
 { loadPixels();
 
   float xoff = 0.0; // Start xoff at 0
