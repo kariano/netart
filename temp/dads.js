@@ -43,7 +43,7 @@ class Mover {
 
 	update(vol) {
       
-        let vf = map(vol, 0, 0.2, 0, 1, true)  // volume factor
+        let vf = map(vol, 0, 0.2, 0.2, 1, true)  // volume factor
       
         //print("vol: ", vol, "vf: ", vf)
       
