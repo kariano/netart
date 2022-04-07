@@ -8,6 +8,7 @@ let num;
 let palette_selected
 let mover=[];
 var mouseIsPressed;
+let vfthreshold=0.1
 
 class Mover {
   
@@ -24,7 +25,8 @@ class Mover {
 		this.position = createVector(x,y);
 		this.velocity = createVector(0,0);
 	this.acceleration = createVector(0,0);
-		this.topspeed = random(0.5, 3);//var from 0.05 to 3
+		//this.topspeed = random(0.5, 3);//var from 0.05 to 3
+      	this.topspeed = 3
 		this.h = random(height * 0.01, height * 0.1)
 		this.w = this.h * 0.9;
 
@@ -39,10 +41,16 @@ class Mover {
 	
 	}
 
-	update() {
+	update(vol) {
       
-		this.acceleration =  p5.Vector.random2D();
-		this.velocity.add(this.acceleration);
+        let vf = map(vol, 0, 0.2, 0, 1, true)  // volume factor
+      
+        //print("vol: ", vol, "vf: ", vf)
+      
+	this.acceleration = p5.Vector.random2D();
+        let acceleration = p5.Vector.mult(this.acceleration, vf)
+        //print(acceleration.x, acceleration.y)
+		this.velocity.add(acceleration);
 		this.velocity.limit(this.topspeed);
 		this.position.add(this.velocity);
 	
@@ -130,7 +138,7 @@ function draw() {
   let vol = mic.getLevel();
   randomSeed(num)
 	for (let i = 0; i < 10; i++) {
-		mover[i].update();
+		mover[i].update(vol);
 		mover[i].checkEdges();
 		mover[i].display(vol);
 	}
