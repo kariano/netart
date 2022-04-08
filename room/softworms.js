@@ -43,10 +43,10 @@ class Mover {
 
 	update(vol) {
       
-        let vf = map(vol, 0, 0.15, 0.2, 1.5, true)
-        let af = map(vol, 0, 0.15, 0.8, 3, true)
+        let vf = map(vol, 0, 0.25, 0.2, 1.5, true)
+        let af = map(vol, 0, 0.25, 0.6, 3, true)
       
-        print("vol: ", vol, "vf: ", vf, "af: ", af)
+      //  print("vol: ", vol, "vf: ", vf, "af: ", af)
       
 		this.acceleration = p5.Vector.random2D();
         let acceleration = p5.Vector.mult(this.acceleration, vf)
