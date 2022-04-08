@@ -43,14 +43,15 @@ class Mover {
 
 	update(vol) {
       
-        let vf = map(vol, 0, 0.2, 0.2, 1, true)  // volume factor
+        let vf = map(vol, 0, 0.15, 0.2, 1.5, true)
+        let af = map(vol, 0, 0.20, 0.9, 1.1, true)
       
-        //print("vol: ", vol, "vf: ", vf)
+        //print("vol: ", vol, "vf: ", vf, "af: ", af)
       
-	this.acceleration = p5.Vector.random2D();
+		this.acceleration = p5.Vector.random2D();
         let acceleration = p5.Vector.mult(this.acceleration, vf)
-        //print(acceleration.x, acceleration.y)
 		this.velocity.add(acceleration);
+        this.velocity.mult(af)
 		this.velocity.limit(this.topspeed);
 		this.position.add(this.velocity);
 	
