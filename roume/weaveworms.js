@@ -29,7 +29,7 @@ const palette = [
 ];
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   //noStroke();
   stroke(color(255, 255, 255, 100));
