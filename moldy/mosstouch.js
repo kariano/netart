@@ -93,10 +93,16 @@ function initializeFields() {
   nperl = ceil(n / layers);
   framesPerLayer = 100;
 }
-function mousePressed() {
+function keyPressed() {
 
 
  background(0);
+}
+function mousePressed() {
+  //if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+ // }
 }
 
 function runTimer() {
