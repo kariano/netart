@@ -27,7 +27,7 @@ const timer = {
 
 function setup() {
   initializeFields();
-  createCanvas(1150, 604);
+  createCanvas(displayWidth, displayHeight);
   background(0);
   colorMode(HSB, 360, 100, 100);
 
