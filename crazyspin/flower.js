@@ -159,3 +159,10 @@ function drawLiq(vNnum, nm, sm, fcm) {
   endShape();
   //pop();
 }
+
+function mousePressed() {
+ // if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+ // }
+}
