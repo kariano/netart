@@ -108,7 +108,7 @@ function draw() {
   // ------------------------------------------------
 
   blendMode(BLEND);
-  background(250);
+  background(255);
   //noStroke();
   blendMode(MULTIPLY);
   
