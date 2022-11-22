@@ -84,7 +84,7 @@ function setup() {
   // b = random(0,255);
   // a = random(10,30);
   n = floor((2 * PI) / step) + 3;
-
+  backgroun(500);
   radiusDist.length = n;
   //radiusDist.fill(size);
 }
@@ -184,4 +184,10 @@ function blob(size, xCenter, yCenter, k, t) {
   }
   endShape();
 
+}
+function mousePressed() {
+//  if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+ // }
 }
