@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(0.98);
+  background(0);
  
   for (let j = 1; j <= 15; j++) {
    
@@ -62,4 +62,10 @@ function blob(size, xCenter, yCenter, k, t) {
   }
   endShape();
  
+}
+function mousePressed() {
+  //if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+//  }
 }
