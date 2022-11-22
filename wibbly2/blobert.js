@@ -84,7 +84,6 @@ function setup() {
   // b = random(0,255);
   // a = random(10,30);
   n = floor((2 * PI) / step) + 3;
-  backgroun(500);
   radiusDist.length = n;
   //radiusDist.fill(size);
 }
