@@ -91,7 +91,7 @@ print(minRadius);
   //egg = random(1, 12);
   //fry = random(2, 6);
   //pan = random(3, 30);
-
+background=(500);
 
 }
 
