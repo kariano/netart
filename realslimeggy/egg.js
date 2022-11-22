@@ -128,7 +128,7 @@ function draw() {
   // ------------------------------------------------
 
 radiusStep = (maxRadius - minRadius)/circleNum;
-  background(250);
+  background(255);
 
 //print(circleNum)
 //r = random(0,255);
